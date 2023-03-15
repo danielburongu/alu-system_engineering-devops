@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Client configuration file 
+Include /etc/ssh/ssh_config.d/*.conf
+
+Host *
+#   StrictHostKeyChecking ask
+#   IdentityFile ~/.ssh/id_rsa
+#   IdentityFile ~/.ssh/id_dsa
+#   IdentityFile ~/.ssh/id_ecdsa
+#   IdentityFile ~/.ssh/id_ed25519
+#   Port 22
+#   Protocol 2,1
+#   EscapeChar ~
+#   TunnelDevice any:any
+#   PermitLocalCommand no
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
