@@ -10,6 +10,8 @@ touch /etc/nginx/html/index.html
 
 
 echo "Holberton School" > /etc/nginx/html/index.html
+echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
+
 
 # Create custom 404 error page
 echo "<!DOCTYPE html>
