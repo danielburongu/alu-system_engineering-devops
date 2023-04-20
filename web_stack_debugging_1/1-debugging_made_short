@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
-# This script is for debugging purposes only 
+# debugging_made_short 
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx restart
-if pgrep nginx > /dev/null; then
-  kill "$(pgrep nginx | head -1)"
-else
-  echo " * nginx is not running"
-fi
+service nginx restart && kill "$(pgrep nginx | head -1)" || echo " * nginx is not running"
