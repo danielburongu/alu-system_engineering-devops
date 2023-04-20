@@ -1,4 +1,4 @@
-## debugging #0
+p## debugging #0
 ## Concepts
 For this project, we expect you to look at this concept:
 
@@ -19,7 +19,7 @@ In this debugging series, broken/bugged webstacks will be given to you, the fina
 * Let’s pretend that without these 2 elements, my web application cannot work.
 
 ### Let’s go through this example and fix the server.
-<pre>
+<prev>
 vagrant@vagrant:~$ docker run -d -ti ubuntu:14.04
 Unable to find image 'ubuntu:14.04' locally
 14.04: Pulling from library/ubuntu
@@ -49,14 +49,16 @@ sylvain@ubuntu:~$ cat answerfile
 cp /etc/passwd /tmp/
 echo OK > /tmp/isworking
 sylvain@ubuntu:~$
-Note that as you cannot use interactive software such as emacs or vi in your Bash script, everything needs to be done from the command line (including file edition).
 </prev>
+Note that as you cannot use interactive software such as emacs or vi in your Bash script, everything needs to be done from the command line (including file edition).
+
 ## Installing Docker
 For this project you will be given a container which you can use to solve the task. If you would like to have Docker so that you can experiment with it and/or solve this problem locally, you can install it on your machine, your Ubuntu 14.04 VM, or your Ubuntu 16.04 VM if you upgraded.
 
-### Mac OS
-### Windows
-* Ubuntu 14.04 (Note that Docker for Ubuntu 14 is deprecated and you will have to make some adjustments to the instructions when installing)  Ubuntu 16.04
+[Mac OS](https://intranet.aluswe.com/rltoken/QeWp5HylzMrQiZ2McAZfTg)
+[Windows](https://intranet.aluswe.com/rltoken/3rdTNwhnnd0bkEHA6mD8BA)
+[Ubuntu 14.04](https://intranet.aluswe.com/rltoken/bMB8jPplh6KiGy-iRhAsVw) (Note that Docker for Ubuntu 14 is deprecated and you will have to make some adjustments to the instructions when installing)  
+[Ubuntu 16.04](https://intranet.aluswe.com/rltoken/-JuuvV03VikGj2zvSxz_iw)
 ## Resources
 ## man or help:
 * curl
