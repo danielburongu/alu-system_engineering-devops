@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# This script is used to setup your web servers for the deployment of web_static
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx restart
-if ! pgrep nginx > /dev/null; then echo " * nginx is not running"; fi
+service nginx restart || exit 1
+! pgrep nginx > /dev/null || kill "$(pgrep nginx | head -1)"
