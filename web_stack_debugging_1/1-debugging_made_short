@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# debugging_made_short 
+# This script is used to debug the web server
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx restart && kill "$(pgrep nginx | head -1)" || echo " * nginx is not running"
+if service nginx restart; then kill "$(pgrep nginx | head -1)"; else echo " * nginx is not running"; fi
